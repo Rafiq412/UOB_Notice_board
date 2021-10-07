@@ -1,0 +1,38 @@
+
+.table
+{
+	border: 2px solid black;
+	width: 900px; 
+	position: absolute; 
+	top: 130px; 
+	float: left;
+} 
+th
+{
+	font-size: 25px;
+}
+td
+{
+	font-size: 20px;
+}
+tr:nth-child(even)
+{
+	background-color: #fff;
+}
+
+tr:nth-child(odd)
+{
+	background-color: #ddd;
+}
+
+       /* N O T E */
+
+.note
+{
+	border: 2px solid black;
+	width: 900px; 
+	position: absolute; 
+	/* top: 130px;  */
+	margin: 130px 160px;
+	float: left;
+}

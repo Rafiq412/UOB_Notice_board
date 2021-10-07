@@ -1,0 +1,92 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+body {
+	text-align: left;
+}
+.wrapper {
+	width: 1170px;
+	margin: 0 auto;
+}
+.icon li a
+{
+	text-decoration: none;
+	padding: 13px 13px;
+	color: #fff;
+	margin: 12px 12px;
+	float: right;
+	list-style: none;
+	line-height: 50px;	
+}
+header {
+	height: 100px;
+	background: #262626;
+	width: 100%;
+	z-index: 10;
+	position: fixed;
+}
+.logo {
+	width: 30%;
+	float: left;
+	line-height: 100px;
+}
+.logo a {
+	text-decoration: none;
+	font-size: 20px;
+	font-family: poppins;
+	color: #fff;
+	letter-spacing: 5px;
+}
+nav {
+	float: right;
+	line-height: 100px;
+}
+body:before {
+	content: '';
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	/* background-image: "{{ url_for('static',filename='img/banner.jpg') }}"; */
+	background-image: url(background.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	background-size: cover;
+	-webkit-filter: blur(3px);
+	-moz-filter: blur(3px);
+	filter: blur(3px);
+}
+.form {
+	position: absolute;
+	top: 30%;
+	left: 25%;
+	transform: translate(-25%, -25%);
+	width: 1150px;
+	height: 150px;
+	padding: 80px 40px;
+	background: rgba(0, 0, 0, 0.5);
+}
+.form h2 {
+	margin: 0;
+	padding: 0 0 20px;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+}
+.form a
+{
+	height: 30px;
+	color: black;
+	font-size: 20px;
+	background: grey;
+	cursor: pointer;
+	margin-top: 3%;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+

@@ -1,0 +1,91 @@
+.user
+{
+    /* border: 2px solid red; */
+    width: 600px;
+	position: relative;
+	top: 90px;
+	left: 26%;
+
+}
+
+.user input
+{
+    margin: auto;
+}
+input[class=email]
+{
+    width: 45%; 
+    float: right;
+    margin-right: 5%;
+    padding: 10px 20px;
+    box-sizing: border-box;     
+    border: 2px solid #000;
+}
+input[class=name]
+{
+    width: 45%;
+    padding: 10px 20px;
+    box-sizing: border-box;     
+    border: 2px solid #000;
+}
+input[class=password]
+{
+    width: 45%; 
+    float: right;
+    margin-right: 5%;
+    margin-top: -11%;
+    padding: 10px 15px;
+    box-sizing: border-box;     
+    border: 2px solid #000;
+}
+input[class=department]
+{
+    width: 45%; 
+    padding: 10px 20px;
+    box-sizing: border-box;     
+    border: 2px solid #000;
+}
+button[type=submit]
+{
+    width: 90%;
+    height: 35px; 
+    font-size: 20px;
+    cursor: pointer;
+    border-color: #000;
+    outline: none;
+    color: #000;
+    background-color: #fff;
+    margin-left: 3%;
+}
+button[type=submit]:hover
+{
+    background-color: #000;
+}
+
+/* T A B L E */
+
+.usertable
+{
+    border: 2px solid black;
+    width: 900px;
+	position: relative;
+	top: 150px;
+	left: 26%;
+}
+th
+{
+	font-size: 25px;
+}
+td
+{
+	font-size: 20px;
+}
+tr:nth-child(even)
+{
+	background-color: #fff;
+}
+
+tr:nth-child(odd)
+{
+	background-color: #ddd;
+}

@@ -1,0 +1,116 @@
+       /* A D M I N P A G E */
+.logo
+{
+	background-color: darkgrey;
+	position: fixed;
+	height: 100%;
+	width: 300px;
+	top: 0%;
+	left: 0%;	
+}
+
+.logo h1
+{
+	text-decoration: none;
+	font-size: 16px;
+	font-family: poppins;
+	color:#000;
+	letter-spacing: 5px;
+	margin: 30px 60px;
+}
+
+.logo ul
+{
+	overflow:auto;
+}
+.logo li
+{
+	float: left;
+	list-style: none;
+	line-height: 50px;
+	margin: 10px 10px;
+}
+.logo li a
+{
+	padding: 13px 13px;
+	text-decoration: none;
+	color:#fff;
+}
+.logo li a:hover
+{
+	color: red;
+	
+}
+.navigation              /* (logout) */
+{
+	text-align: right;
+	background-color:#262626;
+	position: absolute;
+	width: calc(100% - 300px);
+	top: 0%;
+	left: 300px;
+	height: auto;
+} 
+.navigation li
+{
+	float: right;
+	list-style: none;
+	line-height: 50px;
+}
+.navigation li a
+{
+	padding: 13px 13px;
+	text-decoration: none;
+	color: #fff;
+	margin: 12px 12px;
+}
+.navigation li a:hover
+{
+	color: red;
+}
+                                         /* admin table */
+
+
+                                       /* STUDENT */
+.logo_student
+{
+	background-color: darkgrey;
+	position: fixed;
+	height: 8%;
+	width: 300px;
+	top: 0%;
+	left: 0%;	
+}
+.logo_student h1
+{
+	text-decoration: none;
+	font-size: 16px;
+	font-family: poppins;
+	color:#000;
+	letter-spacing: 5px;
+	margin: 15px 60px;
+}
+.navigation-notice  
+{
+	height: 100px;
+	left: 0%;
+	top: 0%;
+	background: #262626;
+	width: 100%;
+	z-index: 20;
+	position: fixed;
+}
+.navigation-notice li
+{
+	width: 30%;
+	float: left;
+	line-height: 100px;
+}
+.navigation-notice li a
+{
+	text-decoration: none;
+	font-size: 20px;
+	font-family: poppins;
+	color: #fff;
+	letter-spacing: 5px;
+}

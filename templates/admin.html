@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<link rel="stylesheet" href="{{ url_for('static',filename='css/admin.css') }}">
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Title</th>
+            <th scope="col">Details</th>
+            <th scope="col">Date</th>
+            <th scope="col">Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for notice in allnotice %}
+        <tr>
+            <td>{{notice.subject}}</td>
+            <td><a href="/read_notice/notice_id={{notice.id}}">Read</a></td>
+            <td>{{notice.date_created}}</td>
+            <td><a href="/delete/{{notice.id}}" type="button" class="btn btn-dark">Delete</button></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<div class="popup">
+    <form action="/manage_notice" method="POST">
+        <div class="mb-3">
+            <label for="subject" class="form-label">Title</label>
+            <input type="text" class="form-control " id="subject" name="subject" required>
+        </div>
+        <div class="mb-3">
+            <label for="detail" class="form-label">Detail</label>
+            <textarea type="textarea" class="form-control" id="detail" name="detail" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-dark">POST</button>
+    </form>
+</div>
+
+{% endblock body %}

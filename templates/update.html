@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<link rel="stylesheet" href="{{ url_for('static',filename='css/manageusers.css') }}">
+
+<div class="user mx-3">
+    <h2>Add User</h2>
+    <form action="/update/{{user.id}}" method="POST">
+        <div class="mb-3">
+            <input type="email" class="email" id="email" placeholder="Email" name="email" value="{{user.email}}" required>
+        </div>
+        <div class="mb-3">
+            <input type="text" class="name" id="name" placeholder="Name" name="name" value="{{user.name}}" required>
+        </div>
+        <div class="mb-3">
+            <input type="text" class="department" id="department" placeholder="Department" name="department" value="{{user.department}}" required>
+        </div>
+        <div class="mb-3">
+            <input type="text" class="password" id="password" placeholder="Password" name="password" value="{{user.password}}" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Update</button>
+    </form>
+</div>
+
+
+
+{% endblock body %}

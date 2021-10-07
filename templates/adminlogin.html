@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script src="http://kit.fontawesome.com/433888fe69.js" crossorigin="anonymous">
+	</script>
+	<title>Login</title>
+	<link rel="stylesheet" href="{{ url_for('static',filename='css/login.css') }}">
+</head>
+
+<body>
+	<div class="box-area">
+		<header>
+			<div class="wrapper">
+				<div class="logo">
+					<a href="#">ONLINE NOTICE BOARD</a>
+				</div>
+			</div>
+		</header>
+	</div>
+	<div class="signin-form">
+		<h2>Admin Sign In</h2>
+		<form action="/adminlogin" method="POST">
+			<input placeholder="Enter User Name" type="text"  name="username">         
+			<input placeholder="Enter Password" type="password" name="password">        
+			<input type="submit" value="Sign In">
+			<h3>{{msg}}</h3>
+		</form>
+	</div>
+
+</body>
+
+</html>

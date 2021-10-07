@@ -1,0 +1,75 @@
+ .table
+{
+	border: 2px solid black;
+	width: 900px;
+	position: relative;
+	top: 450px;
+	left: 26%;		
+}
+th
+{
+	font-size: 25px;
+}
+td
+{
+	font-size: 20px;
+}
+tr:nth-child(even)
+{
+	background-color: #fff;
+}
+
+tr:nth-child(odd)
+{
+	background-color: #ddd;
+}
+ 
+
+/* POPUP */
+
+.popup
+{
+	/* border: 2px solid red; */
+	width: 900px;
+	position: absolute;
+	top: 70px;
+	left: 26%;
+}
+.popup input
+{
+	padding: 12px;	
+}
+label
+{
+	font-size: 150%;	
+}
+input[type=text]
+{
+	border: 2px solid black;
+    border-radius: 4px;
+}
+input[type=text]:focus 
+{
+	border: lightblue;
+}
+textarea[type=textarea]
+{
+	border: 2px solid black;
+}
+textarea[type=textarea]:focus 
+{
+	border: lightblue;
+}
+button[type=submit]
+{
+	/* border: 2px solid black; */
+	border-radius: 6px;
+    /* color: #000; */
+    padding: 12px 40px;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* button[type=submit]:hover
+{
+	color: black;
+}  */
